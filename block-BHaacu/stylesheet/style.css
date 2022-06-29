@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.heading {
+  background-color: #DC3C46;
+  padding: 1rem 0;
+  color: white;
+}
+
+.heading li {
+  margin-left: 0.5rem;
+}
+
+.heading i {
+  margin-right: 0.5rem;
+}
+
+.sub-heading {
+  background-color: #F2F2F2;
+}
+
+.sub-heading h1:before {
+  content: "Uni";
+  color: #DC3C46;
+  margin-right: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.3rem 0;
+}
+
+.sub-heading h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.3rem 0;
+}
+
+.sub-heading .menu {
+  padding: 1.3rem 0;
+}
+
+.sub-heading .menu a {
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: black;
+  padding: 1.3rem 0;
+}
+
+.sub-heading .menu:hover {
+  background-color: #DC3C46;
+  position: relative;
+}
+
+.sub-heading .menu:hover a {
+  color: white;
+}
+
+.sub-heading .menu:hover i {
+  color: white;
+}
+
+.sub-heading .menu:hover .sub-menu li {
+  display: block;
+}
+
+.sub-heading .menu:hover .sub-menu a {
+  color: black;
+}
+
+.sub-heading .sub-menu {
+  position: absolute;
+  top: 62px;
+  background-color: #F2F2F2;
+  width: 110px;
+}
+
+.sub-heading .sub-menu li {
+  display: none;
+  margin-bottom: 0.5rem;
+}
+
+/* hero */
+.hero {
+  background-image: url("../assets/media/banner-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20%;
+  height: 85vh;
+  width: 100vw;
+}
+
+.hero .container {
+  height: 100%;
+}
+
+.hero .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero-content h2 {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.hero .hero-content p {
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+.hero .hero-content .btn {
+  background-color: #DC3C46;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 25px;
+  color: white;
+}
+
+/* service */
+.service {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.service h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.service p {
+  color: gray;
+}
+
+.service div {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.service div h4 {
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.service div p {
+  line-height: 1.5;
+}
+
+.service div .btn {
+  border: 1px solid #DC3C46;
+  color: #DC3C46;
+  background-color: white;
+  margin-top: 2rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 25px;
+}
+
+/*solution */
+.solution {
+  background-color: #F2F2F2;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.solution h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.solution p {
+  color: gray;
+  line-height: 1.5;
+}
+
+.solution .btn {
+  border: 1px solid #DC3C46;
+  color: #DC3C46;
+  background-color: #F2F2F2;
+  margin-top: 2rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 25px;
+}
+
+/* about */
+.about {
+  padding-bottom: 4rem;
+}
+
+.about .abt-content {
+  text-align: center;
+}
+
+.about .abt-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.4rem 0;
+  line-height: 1.4;
+}
+
+.about .abt-content p {
+  color: gray;
+  line-height: 1.5;
+}
+
+.about .abt-content .btn {
+  border: 1px solid #DC3C46;
+  color: #DC3C46;
+  background-color: white;
+  margin-top: 2rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 25px;
+}
+
+/* request */
+.request {
+  background-color: #DC3C46;
+  padding: 2rem 0;
+  color: white;
+}
+
+.request h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 0.7rem;
+}
+
+.request .btn {
+  border: 1px solid white;
+  background-color: #DC3C46;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+}
+
+/*industry */
+.industry h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.industry p {
+  color: gray;
+  line-height: 1.5;
+}
+
+/* client */
+.client {
+  text-align: center;
+  padding-bottom: 4rem;
+  background-color: #F2F2F2;
+}
+
+.client h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+}
+
+.client img {
+  width: 15%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+/* footer */
+.footer {
+  background-color: #343A40;
+  color: white;
+  padding-bottom: 4rem;
+}
+
+.footer h5 {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.footer li {
+  padding-bottom: 0.8rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-30 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30.33%;
+          flex: 0 1 30.33%;
+}
+
+.flex-48 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 48%;
+          flex: 0 1 48%;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.padding {
+  padding-top: 4rem;
+}
+/*# sourceMappingURL=style.css.map */
